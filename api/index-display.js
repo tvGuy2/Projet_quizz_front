@@ -17,12 +17,14 @@ const displayThemes = (themes, onClick) => {
 };
 
 
-// Fonction pour afficher les questions
-function displayQuestions(questions) {
+function displayQuestions(questions, currentQuestionIndex) {
     const questionContainer = document.getElementById('question-container');
     questionContainer.innerHTML = '';
 
-    questions.forEach(question => {
+    // Vérifier si l'index de la question est valide
+    if (currentQuestionIndex >= 0 && currentQuestionIndex < questions.length) {
+        const question = questions[currentQuestionIndex];
+
         // Créer des éléments HTML pour chaque question et réponse
         const questionElement = document.createElement('h3');
         questionElement.textContent = question.intitule;
@@ -46,9 +48,9 @@ function displayQuestions(questions) {
 
         // Ajouter les éléments à votre interface utilisateur
         questionContainer.appendChild(questionWrapper);
-    });
+    }
 }
 
 
-export {displayThemes};
-export {displayQuestions};
+
+export {displayThemes,displayQuestions,};

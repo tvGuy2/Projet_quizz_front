@@ -12,7 +12,7 @@ const getThemes = () => {
 }
 
 const getQuestions = (themeId, questionCount) => {
-    const url = `/api/themes/${themeId}/${questionCount}/question`;
+    const url = `http://127.0.0.1:8000/api/themes/${themeId}/questions/${questionCount}`;
     return fetch(url)
         .then((response) => {
             // Vérifier si la réponse est valide
