@@ -5,27 +5,23 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Quizz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
 <h1>Quizz</h1>
 
-<table id="users">
-    <thead>
-    <tr>
-        <th>Nom</th>
-        <th>Username</th>
-        <th>Email</th>
-    </tr>
+<div id="themes" class="d-flex justify-content-center align-items-center flex-wrap"></div>
 
-    </thead>
+<div id="question-container"></div>
 
-    <tbody>
+<div id="question-count">
+    <label for="question-range">Nombre de questions :</label>
+    <input type="range" id="question-range" min="1" max="10" step="1" value="1">
+    <span id="selected-count">1</span>
+</div>
 
-    </tbody>
-</table>
-
-<script src="app.js" type="module" ></script>
+<script src="app.js" type="module"></script>
 </body>
 </html>
