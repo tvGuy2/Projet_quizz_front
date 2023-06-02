@@ -1,4 +1,4 @@
-import { getThemes } from "./api.js";
+import { getThemes } from "../api/api.js";
 import { displayThemes } from "./index-display.js";
 
 // Fonction pour gérer le clic sur un thème
@@ -11,7 +11,7 @@ const handleThemeClick = (theme) => {
     localStorage.setItem("selectedQuestionCount", questionCount);
 
     // Redirection vers la nouvelle page
-    window.location.href = "question.html";
+    window.location.href = "../public/question.html";
 };
 
 getThemes()

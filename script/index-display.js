@@ -37,6 +37,7 @@ function displayQuestions(questions, currentQuestionIndex) {
             answerButton.type = 'button';
             answerButton.classList.add('btn', 'btn-primary', 'answer-button');
             answerButton.textContent = reponse.intitule;
+            answerButton.id = reponse.id;
 
             answersContainer.appendChild(answerButton);
         });
