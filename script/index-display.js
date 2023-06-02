@@ -35,7 +35,7 @@ function displayQuestions(questions, currentQuestionIndex) {
         question.reponses.forEach(reponse => {
             const answerButton = document.createElement('button');
             answerButton.type = 'button';
-            answerButton.classList.add('btn', 'btn-primary', 'answer-button');
+            answerButton.classList.add('btn', 'answer-button');
             answerButton.textContent = reponse.intitule;
             answerButton.id = reponse.id;
 

@@ -10,14 +10,17 @@
     <link rel="stylesheet" href="assets/styles/styles.css">
 </head>
 <body>
-<h1>Quizz</h1>
+<div id="title-container">
+    <h1>Quizz</h1>
+</div>
 
-<div id="themes" class="d-flex justify-content-center align-items-center flex-wrap"></div>
-
+<div id="themes-container">
+    <div id="themes" class="d-flex justify-content-center align-items-center flex-wrap"></div>
+</div>
 <div id="question-container"></div>
 
 <div id="question-count">
-    <label for="question-range">Nombre de questions :</label>
+    <label for="question-range" >Nombre de questions :</label>
     <input type="range" id="question-range" min="1" max="10" step="1" value="1">
     <span id="selected-count">1</span>
 </div>

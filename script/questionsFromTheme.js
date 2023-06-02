@@ -36,7 +36,7 @@ function handleNextQuestion(questions) {
                 displayQuestions(questions, currentQuestionIndex);
                 handleNextQuestion(questions)
             } else {
-                window.location.href = `responses.html?userResponses=${encodeURIComponent(JSON.stringify(userResponses))}`
+                window.location.href = `responses.html?userResponses=${encodeURIComponent(JSON.stringify(userResponses))}&questionCount=${questions.length}`;
             }
         });
     });
